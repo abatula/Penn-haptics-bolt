@@ -1,13 +1,8 @@
 all: ROS_NOBUILD
 
-#Check for 32 or 64 bit Kernel
-#i686 if 32-bit
-#x86_64 if 64-bit
-CHEETAH_VERSION = v3.05
-
-TARBALL_NAME = cheetah-library-$(CHEETAH_VERSION)
+TARBALL_NAME = bt_cheetah
 TARBALL = build/$(TARBALL_NAME).zip
-TARBALL_URL = http://byte-haptics.no-ip.org:8010/downloads/biotac_resources/$(TARBALL_NAME).zip
+TARBALL_URL = http://www.syntouchllc.com/Products/_software/$(TARBALL_NAME).zip
 SOURCE_DIR = build/$(TARBALL_NAME)
 UNPACK_CMD = unzip
 include $(shell rospack find mk)/download_unpack_build.mk
